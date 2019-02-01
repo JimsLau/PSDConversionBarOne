@@ -154,5 +154,92 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .skipLink:focus {
   left: 0; }
 
+body {
+  font-size: 62.5%;
+  height: 100vh;
+  font-family: "Chathura", sans-serif;
+  color: #ffffff;
+  background: #111010; }
+
+header {
+  width: 100%; }
+
 .navLogo {
-  font-family: "Tulpen One", cursive; }
+  font-family: "Tulpen One", cursive;
+  font-size: 6em;
+  text-transform: capitalize;
+  padding-bottom: 10px; }
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 2%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  nav a {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3.8em;
+    color: #ffffff;
+    font-family: "Chathura", sans-serif;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s; }
+
+.navBar ul {
+  width: calc(100% / 2);
+  margin: 0 auto;
+  padding: 0; }
+
+.navBar a:hover {
+  color: #ff8327; }
+
+.contactHeader img {
+  height: 100%;
+  width: 100%; }
+
+.inTouch {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: #ffffff;
+  font-size: 6.3em; }
+  .inTouch span {
+    text-transform: capitalize; }
+  .inTouch h1 {
+    margin: 0; }
+
+.contactForm {
+  position: absolute;
+  width: 50%;
+  height: 45%;
+  top: 45%;
+  left: 40%;
+  background: #220303;
+  -webkit-box-shadow: 2em 2em #ff8327;
+  box-shadow: 2em 2em #ff8327; }
+
+.address p {
+  font-size: 3.9em;
+  margin: 0;
+  padding: 0;
+  height: 30px; }
+
+footer {
+  background: #323030; }

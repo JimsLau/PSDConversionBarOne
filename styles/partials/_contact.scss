@@ -1,0 +1,39 @@
+.contactHeader img {
+    height: 100%;
+    width: 100%;
+}
+
+.inTouch {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: $primaryFont;
+    font-size: 6.3em;
+    span {
+        text-transform: capitalize;
+    }
+        h1 {
+            margin: 0;
+        }
+}
+
+.contactForm {
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    top:45%;
+    left: 40%;
+    background: $secondaryBg;
+    box-shadow: 2em 2em $secondaryFont;
+}
+
+.address p {
+    font-size: 3.9em;
+    // line-height: 3em;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
+
+

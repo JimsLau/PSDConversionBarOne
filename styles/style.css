@@ -1,123 +1,155 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
-  display: block; }
+  display: block;
+}
 
 audio, canvas, video {
-  display: inline-block; }
+  display: inline-block;
+}
 
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+}
 
 a:focus {
-  outline: thin dotted; }
+  outline: thin dotted;
+}
 
 a:active, a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 b, strong {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 code, kbd, pre, samp {
   font-family: monospace, serif;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 pre {
   white-space: pre-wrap;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
 q {
-  quotes: \201C \201D \2018 \2019; }
+  quotes: \201C \201D \2018 \2019;
+}
 
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -.5em; }
+  top: -.5em;
+}
 
 sub {
-  bottom: -.25em; }
+  bottom: -.25em;
+}
 
 img {
-  border: 0; }
+  border: 0;
+}
 
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: .35em .625em .75em; }
+  padding: .35em .625em .75em;
+}
 
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
-  margin: 0; }
+  margin: 0;
+}
 
 button, input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 button[disabled], input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 input[type=checkbox], input[type=radio] {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0; }
+          box-sizing: border-box;
+  padding: 0;
+}
 
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 textarea {
   overflow: auto;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 body, figure {
-  margin: 0; }
+  margin: 0;
+}
 
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .clearfix:after {
   visibility: hidden;
@@ -125,12 +157,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 0;
   content: '';
   clear: both;
-  height: 0; }
+  height: 0;
+}
 
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .visuallyHidden {
   position: absolute !important;
@@ -141,7 +174,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0 !important;
   height: 1px !important;
   width: 1px !important;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .skipLink {
   position: absolute;
@@ -149,26 +183,37 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   top: 5px;
   z-index: 999;
   background: #fcfcfc;
-  color: #152d20; }
+  color: #152d20;
+}
 
 .skipLink:focus {
-  left: 0; }
+  left: 0;
+}
 
 body {
   font-size: 62.5%;
   height: 100vh;
   font-family: "Chathura", sans-serif;
   color: #ffffff;
-  background: #111010; }
+  background: #111010;
+}
 
 header {
-  width: 100%; }
+  width: 100%;
+}
+
+section .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .navLogo {
   font-family: "Tulpen One", cursive;
   font-size: 6em;
   text-transform: capitalize;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 nav {
   position: absolute;
@@ -179,51 +224,63 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  nav li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  nav a {
-    list-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 3.8em;
-    color: #ffffff;
-    font-family: "Chathura", sans-serif;
-    -webkit-transition: ease-in-out 0.5s;
-    -o-transition: ease-in-out 0.5s;
-    transition: ease-in-out 0.5s; }
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3.8em;
+  color: #ffffff;
+  font-family: "Chathura", sans-serif;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
 
 .navBar ul {
   width: calc(100% / 2);
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+}
 
 .navBar a:hover {
-  color: #ff8327; }
+  color: #ff8327;
+}
 
 .contactHeader img {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 .inTouch {
   position: absolute;
   top: 25%;
   left: 10%;
   color: #ffffff;
-  font-size: 6.3em; }
-  .inTouch span {
-    text-transform: capitalize; }
-  .inTouch h1 {
-    margin: 0; }
+  font-size: 6.3em;
+}
+
+.inTouch span {
+  text-transform: capitalize;
+}
+
+.inTouch h1 {
+  margin: 0;
+}
 
 .contactForm {
   position: absolute;
@@ -233,13 +290,17 @@ nav {
   left: 40%;
   background: #220303;
   -webkit-box-shadow: 2em 2em #ff8327;
-  box-shadow: 2em 2em #ff8327; }
+          box-shadow: 2em 2em #ff8327;
+}
 
 .address p {
   font-size: 3.9em;
   margin: 0;
   padding: 0;
-  height: 30px; }
+  height: 30px;
+}
 
 footer {
-  background: #323030; }
+  background: #323030;
+}
+/*# sourceMappingURL=style.css.map */

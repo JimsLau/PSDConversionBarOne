@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Chathura:100,300,400,700|Tulpen+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="shortcut icon" href="..//ProjectTwo/barFinalAssets/barOneFavicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="..//ProjectTwo/barFinalAssets/barOneFaviconStill.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <!-- Modified favicon made by Olut from https://www.favicon.cc/?action=icon_list&user_id=239362 -->
+    <link rel="shortcut icon" href="..//ProjectTwo/barFinalAssets/barOneFavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Bar-One Blog</title>
+    <title>Bar-One: Blog</title>
 </head>
 
 <body>
@@ -19,11 +20,11 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#home">home</a>
+                        <a href="home.html">home</a>
                         <a href="#about">about</a>
-                        <a href="#home" class="navLogo">Bar-One</a>
-                        <a href="#blog">blog</a>
-                        <a href="#contact">contact</a>
+                        <a href="home.html" class="navLogo">Bar-One</a>
+                        <a href="#">blog</a>
+                        <a href="contact.html">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -85,23 +86,25 @@
                         officia inventore velit possimus tenetur molestiae esse dicta eos repellendus est impedit alias mollitia.
                     </p>
                 </div>
-                <form class="commentForm">
-                    <div class="nameInput">
-                        <label for="name" class="visuallyHidden">name</label>
-                        <input type="text" id="name" placeholder="Name">
-                    </div>
-                    <div class="emailInput">
-                        <label for="email" class="visuallyHidden">email address</label>
-                        <input type="email" id="email" name="email" placeholder="Email address">
-                    </div>
-                    <div class="CommentInput">
-                        <label for="message" class="visuallyHidden">message</label>
-                        <input type="text" id="messageInput" name="text" placeholder="Comment">
-                    </div>
-                    <div class="submitButton">
-                        <button type="submit" name="submit">Submit</button>
-                    </div>
-                </form>
+                <div class="commentForm">
+                    <form>
+                        <div class="nameInput">
+                            <label for="name" class="visuallyHidden">name</label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="emailInput">
+                            <label for="email" class="visuallyHidden">email address</label>
+                            <input type="email" id="email" name="email" placeholder="Email address">
+                        </div>
+                        <div class="messageInput">
+                            <label for="comment" class="visuallyHidden">message</label>
+                            <textarea type="text" id="comment" name="text" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="submitButton">
+                            <button type="submit" name="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <aside>

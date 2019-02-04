@@ -2,11 +2,92 @@
 body {
     font-size: 62.5%;
     height: 100vh;
-    font-family: $chathura;
-    color: $primaryFont;
+    font-family: $primary;
+    color: $primaryColor;
     background: $primaryBg;
+    letter-spacing: 0.19em;
+    line-height: 3em;
+    font-weight: 100;
+    p {
+        font-size: 3.9em;
+    }
 }
 
 header {
     width: 100%;
 }
+
+.button a {
+    color: $primaryColor;
+    font-family: $secondary;
+    text-decoration: none;
+    font-size: 3.8em;
+    background: $accent;
+    padding: 10px 35px;
+    transition: ease-in-out 0.5s;
+}
+
+.button a:hover {
+    color: $accent;
+    background: $secondaryColor;
+    box-shadow: 0.2em 0.1em 0.1em;
+}
+
+form {
+    padding: 0 30px;
+}
+
+input[type="text"],
+input[type="email"] {
+    background-color: transparent;
+    border: none;
+    color: $primaryColor;
+    border-bottom: 1px solid $primaryColor;
+    width: 100%;
+    padding-left: 30px;
+    caret-color: $secondaryColor;
+
+}
+
+.nameInput,
+.emailInput {
+    width: 100%;
+}
+
+.messageInput {
+    margin: 30px auto;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid $primaryColor;
+    background-color: transparent;
+    color: $primaryColor;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    caret-color: $secondaryColor;
+}
+
+.submitButton {
+    width: 100%;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $accent;
+    border: none;
+    color: $primaryColor;
+    transition: ease-in-out 0.5s;
+}
+
+button:hover {
+    background: $secondaryColor;
+    color: $accent;
+}
+
+

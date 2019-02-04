@@ -7,7 +7,6 @@
     position: absolute;
     top: 25%;
     left: 10%;
-    color: $primaryFont;
     font-size: 6.3em;
     span {
         text-transform: capitalize;
@@ -17,22 +16,102 @@
         }
 }
 
+main {
+    height: 50%;
+}
+
+aside {
+    width: calc(100% / 3);
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.contactInfo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia {
+    width: 53%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialMedia i {
+    font-size: 2.5em;
+    transition: ease-in-out 0.4s;
+}
+
+.infoEmail a {
+    font-size: 3.9em;
+    transition: ease-in-out 0.5;
+    line-height: 2em;
+    height: 50%;
+}
+
+.infoEmail a:hover {
+    color: $secondaryColor;
+}
+
+.mediaInfo a {
+    color: $primaryColor;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
+
+.fa-facebook-f:hover {
+    color: $facebook;
+}
+
+.fa-instagram:hover {
+    color: $instagram;
+}
+
+.fa-twitter:hover {
+    color: $twitter;
+}
+
+.fa-whatsapp:hover {
+    color: $whatsapp;
+}
+
 .contactForm {
     position: absolute;
     width: 50%;
-    height: 45%;
+    height: 50%;
     top:45%;
     left: 40%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $secondaryBg;
-    box-shadow: 2em 2em $secondaryFont;
+    box-shadow: 2em 2em $secondaryColor;
+}
+
+form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 30px);
+    height: 100%;
+    font-size: 3.9em;
+} 
+
+
+.nameEmail {
+    display: flex;
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .address p {
-    font-size: 3.9em;
-    // line-height: 3em;
     margin: 0;
     padding: 0;
-    height: 30px;
 }
 
 

@@ -1,3 +1,115 @@
-section .section1 {
+
+
+.homeHeader {
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
 }
+
+.homeHeader img {
+    width: 100%;
+}
+
+.centerLogo {
+    z-index: 10;
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    text-align: left;
+        h1 {
+            font-family: $secondary;
+            font-size: 26.14em;
+            margin: 5% auto;
+            height: 100%;
+            color: $secondaryColor;
+            padding: 20px 0 10px 0;
+        }
+            h2 {
+                font-size: 8.32em;
+                padding: 10px;
+            }
+        
+}
+
+.headerBox {
+    width: 100%;
+}
+
+.headerBox Img {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 50%;
+    height: 60%;
+}
+
+.bannerImg img {
+    width: 100%;
+}
+
+.section1 {
+    width: 100%;
+    display: block;
+        h2 {
+            font-size: 6.8em;
+            margin: 0;
+        }
+}
+
+.newSpace,
+.community,
+.blog,
+.getInTouch {
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $accent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.section1 i {
+    font-size: 3em;
+}
+
+.spaceComm,
+.blogTouch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.section2 {
+    background: $secondaryBg;
+     h2 {
+         font-size: 6.8em;
+     }
+}
+
+.newLocationImg img {
+    box-shadow: 2em 2em $secondaryColor;
+}
+
+.planAheadImg img {
+    box-shadow: -2em 2em $secondaryColor;
+}
+
+.section3 h2,
+.section4 h2 {
+    font-size: 6.8em;
+    color: $secondaryColor;
+}
+
+
+
+
+

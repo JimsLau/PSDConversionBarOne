@@ -39,10 +39,10 @@
 
 .headerBox Img {
     position: absolute;
-    top: 38%;
-    left: 50%;
+    top: 397px;
+    right: 0;
     width: 50%;
-    height: 60%;
+    height: 650px;
 }
 
 .bannerImg img {
@@ -51,9 +51,9 @@
 
 .section1 {
     width: 100%;
+    padding: 100px;
     display: block;
-        h2 {
-            font-size: 6.8em;
+        h3 {
             margin: 0;
         }
 }
@@ -74,10 +74,24 @@
     height: 50px;
     border-radius: 50%;
     padding: 30px;
+    transition: ease-in-out 0.5s;
+}
+
+.icon:hover {
+    background: $secondaryColor;
+    color: $accent;
+    box-shadow: 0 0 0.7em 0.7em;
 }
 
 .section1 i {
     font-size: 3em;
+}
+
+
+.section1 a {
+    height: 50px;
+    color: $primaryColor;
+    text-decoration: none;
 }
 
 .spaceComm,
@@ -90,23 +104,115 @@
 
 .section2 {
     background: $secondaryBg;
-     h2 {
-         font-size: 6.8em;
-     }
+    display: flex;
+    grid-column-gap: 15%;
 }
 
-.newLocationImg img {
+.newLocation h3,
+.newLocation .button {
+    text-align: right;
+}
+
+.newLocation h3 {
+    margin: 10px 0 10px 0;
+}
+
+.planAhead {
+    position: relative;
+    right: 0;
+}
+
+.planAhead h3 {
+    margin-bottom: 0px;
+}
+.newLocation p {
+    margin: 20px auto 40px;
+    padding-left: 59px;
+}
+
+.newLocation,
+.planAhead{
+    width: calc(100% / 2);
+}
+
+.planAhead p {
+    margin-top: 20px;
+}
+.leftImg {
+    width: 100%;
+    
+}
+
+.leftImg img {
     box-shadow: 2em 2em $secondaryColor;
+    position: relative;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    
 }
 
-.planAheadImg img {
+.rightImg img {
+    box-shadow: -2em 2em $secondaryColor;
+    position: relative;
+    bottom: -45px;
+    right: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hostParty {
+    text-align: center;
+    margin: 6%;
+}
+
+.hostParty h3 {
+    margin-bottom: 10px;
+}
+
+.hostParty p {
+    margin: 30px 20% 50px;
+}
+
+.section3 h3,
+.section4 h3 {
+    color: $secondaryColor;
+}
+
+.events {
+    display: flex;
+    padding: 100px 300px;
+
+}
+
+.eventsImg {
+    width: 30%;
+}
+
+.eventsImg img {
     box-shadow: -2em 2em $secondaryColor;
 }
 
-.section3 h2,
-.section4 h2 {
-    font-size: 6.8em;
-    color: $secondaryColor;
+.eventsInfo {
+    width: 70%;
+}
+
+.eventsInfo h3 {
+    margin: 10px 0 10px 0;
+}
+
+.gallery {
+    background: $secondaryBg;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.galleryItem {
+    position: relative;
+    max-width: 100%;
+    margin: 20px;
 }
 
 

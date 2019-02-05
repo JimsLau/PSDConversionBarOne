@@ -1,0 +1,100 @@
+.blogHeader img {
+    width: 100%;
+}
+
+.blogHeadline {
+    position: absolute;
+    top: 74%;
+    left: 10%;
+        h1 {
+    font-size: 9.3em;
+    margin: 0;
+    z-index: 10;
+    }
+}
+
+.blogNews {
+    position: absolute;
+    right: 0;
+    width: 60%;
+}
+
+.blogImg img {
+    box-shadow: -2em 2em $secondaryColor;
+    width: 100%;
+    position: relative;
+    top: -142px;
+    right: 0;
+}
+
+.blogInfo {
+    padding: 30px 50px 30px 100px;
+    box-shadow: -1em 1em $secondaryColor;
+    position: relative;
+    top: -153px;
+    right: 10px;
+        h3 {
+            margin-bottom: 0;
+        }
+        .date {
+            margin: 10px auto;
+            color: $secondaryColor;
+        }
+
+}
+
+.comments {
+    position: relative;
+    top: -60px;
+    padding-left: 70px;
+        h3 {
+        margin: 0 0 40px;
+    }
+}
+
+.firstComment,
+.secondComment {
+    display: flex;
+}
+
+.secondComment {
+    margin: 60px auto 10px;;
+}
+
+.commentImg1,
+.commentImg2 {
+    margin-right: 35px;
+    padding-top: 7px;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.comment1,
+.comment2 {
+    padding-right: 45px;
+    p {
+        margin-top: 20px;
+        padding-right: 40px;
+    }
+}
+
+.blogForm {
+    padding: 0;
+    .submitButton {
+        font-family: $secondary;
+        font-size: 1em;
+    }
+}
+
+.blogForm {
+    input[type="text"],
+    input[type="email"], {
+        border-bottom: 1px solid $secondaryColor;
+    }
+    textarea {
+        border: 1px solid $secondaryColor;
+        height: 150%;
+    } 
+}

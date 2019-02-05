@@ -12,6 +12,34 @@ body {
         font-size: 3.9em;
     }
 }
+// Researched how to do css fade in, found out from stack overflow
+#home {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+}
+
+#mainLogo {
+    -webkit-animation: fadein 5s;
+}
+
+#secondLogo {
+    -webkit-animation: fadein 12s;
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+h3 {
+    font-size: 6.8em;
+}
+
+h4 {
+    font-size: 4.4em;
+    color: $secondaryColor;
+    margin: 0 auto;
+}
 
 header {
     width: 100%;
@@ -30,7 +58,7 @@ header {
 .button a:hover {
     color: $accent;
     background: $secondaryColor;
-    box-shadow: 0.2em 0.1em 0.1em;
+    box-shadow: 0 0 0.2em 0.2em;
 }
 
 form {
@@ -88,6 +116,11 @@ button[type="submit"] {
 button:hover {
     background: $secondaryColor;
     color: $accent;
+    box-shadow: 0 0 0.2em 0.2em;
+}
+
+::placeholder {
+    opacity: 1;
 }
 
 

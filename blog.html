@@ -29,11 +29,12 @@
                 </ul>
             </nav>
         </div>
-        <div class="headline">
+        <div class="blogHeadline">
             <h1>Blog</h1>
         </div>
-        <div class="backgroundImg"></div>
-        <img src="../ProjectTwo/barFinalAssets/blogHeader1.jpg" alt="background image of spirits on bar">
+        <div class="blogHeader">
+            <img src="../ProjectTwo/barFinalAssets/blogHeader1.jpg" alt="background image of spirits on bar">
+        </div>
     </header>
     <main>
         <div class="blogNews">
@@ -41,8 +42,8 @@
                 <img src="../ProjectTwo/barFinalAssets/postImage.jpg" alt="photo of salad">
             </div>
             <div class="blogInfo">
-                <h2>New Menu!</h2>
-                <p>Monday January 30, 2019 by Saron</p>
+                <h3>New Menu!</h3>
+                <p class="date">Monday January 30, 2019 by Saron</p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odit repellendus maxime amet. Officia illo repellat ex soluta
                     illum aperiam. Soluta at itaque fugit nam dignissimos ratione corrupti veritatis aspernatur!
@@ -65,43 +66,47 @@
                 </p>
             </div>
             <div class="comments">
-                <div class="commentImg1">
-                    <img src="../ProjectTwo/barFinalAssets/commentImage1.jpg" alt="profile photo of comment person with ear rings">
+                <h3>Comments:</h3>
+                <div class="firstComment">
+                    <div class="commentImg1">
+                        <img src="../ProjectTwo/barFinalAssets/commentImage1.jpg" alt="profile photo of comment person with ear rings">
+                    </div>
+                    <div class="comment1">
+                        <h4>Tuesday October 9th, 2019 by Sulaire</h4>
+                        <p>
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam illum beatae nemo quis. Non, quaerat culpa hic ea nulla molestias aperiam odio velit pariatur eaque aut quo reiciendis porro deserunt.
+                        </p>
+                    </div>
                 </div>
-                <div class="comment1">
-                    <h2>Tuesday October 9th, 2019 by Sulaire</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere blanditiis numquam sunt sint iste dolorem ipsam. Veniam
-                        quia iste recusandae minima aliquid sequi corporis. Incidunt, corrupti eaque voluptatibus reiciendis
-                        atque cupiditate enim. Recusandae nostrum fugit numquam magnam dolor atque iure.
-                    </p>
-                </div>
-                <div class="commentImg2">
-                    <img src="../ProjectTwo/barFinalAssets/commentImage2.jpg" alt="profile photo of comment person with beard">
-                </div>
-                <div class="comment2">
-                    <h2>Wednesday October 10th, 2019 by Renzo</h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore commodi similique voluptatem fugit voluptas, quasi eligendi,
-                        officia inventore velit possimus tenetur molestiae esse dicta eos repellendus est impedit alias mollitia.
-                    </p>
+                <div class="secondComment">
+                    <div class="commentImg2">
+                        <img src="../ProjectTwo/barFinalAssets/commentImage2.jpg" alt="profile photo of comment person with beard">
+                    </div>
+                    <div class="comment2">
+                        <h4>Wednesday October 10th, 2019 by Renzo</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia suscipit voluptates aliquam explicabo dignissimos perferendis, saepe asperiores quis eum?
+                        </p>
+                    </div>
                 </div>
                 <div class="commentForm">
-                    <form>
-                        <div class="nameInput">
-                            <label for="name" class="visuallyHidden">name</label>
-                            <input type="text" id="name" placeholder="Name">
-                        </div>
-                        <div class="emailInput">
-                            <label for="email" class="visuallyHidden">email address</label>
-                            <input type="email" id="email" name="email" placeholder="Email address">
+                    <form class="blogForm">
+                        <div class="nameEmail">
+                            <div class="nameInput">
+                                <label for="name" class="visuallyHidden">name</label>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div class="emailInput">
+                                <label for="email" class="visuallyHidden">email address</label>
+                                <input type="email" id="email" name="email" placeholder="Email address">
+                            </div>
                         </div>
                         <div class="messageInput">
                             <label for="comment" class="visuallyHidden">message</label>
                             <textarea type="text" id="comment" name="text" placeholder="Comment"></textarea>
                         </div>
                         <div class="submitButton">
-                            <button type="submit" name="submit">Submit</button>
+                            <button type="submit" name="submit">Post Comment</button>
                         </div>
                     </form>
                 </div>
@@ -111,38 +116,40 @@
             <div class="blogAsideImg">
                 <img src="../ProjectTwo/barFinalAssets/sidebarImage.jpg" alt="image of glass being filled with beer from tap">
             </div>
-            <div class="mission">
-                <h2>Our mission</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, minima inventore in beatae aspernatur alias vero laborum
-                    similique. Vero, culpa.
-                </p>
-                <a href="#home" class="more">Find out more.</a>
-            </div>
-            <div class="recents">
-                <h2>Recent Posts</h2>
-                <ul>
-                    <li>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </li>
-                </ul>
+            <div class="missionPosts">
+                <div class="mission">
+                    <h3>Our mission</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, minima inventore in beatae aspernatur alias vero laborum
+                        similique. Vero, culpa.
+                    </p>
+                    <a href="#home" class="more">Find out more.</a>
+                </div>
+                <div class="recents">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </aside>
     </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2019 HackerYou</p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="copyright">
-        <p>Copyright &copy; 2019 HackerYou</p>
-    </div>
-</footer>
 
 </html>

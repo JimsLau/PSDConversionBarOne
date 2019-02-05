@@ -4,7 +4,7 @@
 
 .blogHeadline {
     position: absolute;
-    top: 74%;
+    top: 35%;
     left: 10%;
         h1 {
     font-size: 9.3em;
@@ -28,6 +28,7 @@
 }
 
 .blogInfo {
+    background: $primaryBg;
     padding: 30px 50px 30px 100px;
     box-shadow: -1em 1em $secondaryColor;
     position: relative;

@@ -642,7 +642,7 @@ nav a {
 
 .blogHeadline {
   position: absolute;
-  top: 74%;
+  top: 35%;
   left: 10%;
 }
 
@@ -668,6 +668,7 @@ nav a {
 }
 
 .blogInfo {
+  background: #111010;
   padding: 30px 50px 30px 100px;
   -webkit-box-shadow: -1em 1em #ff8327;
           box-shadow: -1em 1em #ff8327;

@@ -205,12 +205,14 @@ body p {
   font-size: 3.9em;
 }
 
-#home {
+html {
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
 }
 
-#mainLogo {
+#mainLogo,
+.blogHeadline,
+.inTouch {
   -webkit-animation: fadein 5s;
 }
 
@@ -387,10 +389,10 @@ button:hover {
 
 .headerBox Img {
   position: absolute;
-  top: 397px;
+  top: 300px;
   right: 0;
   width: 50%;
-  height: 650px;
+  height: 520px;
 }
 
 .bannerImg img {
@@ -527,7 +529,7 @@ button:hover {
 
 .hostParty {
   text-align: center;
-  margin: 6%;
+  margin: 12% auto;
 }
 
 .hostParty h3 {
@@ -547,7 +549,7 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 300px;
+  padding: 100px 100px;
 }
 
 .eventsImg {
@@ -561,6 +563,7 @@ button:hover {
 
 .eventsInfo {
   width: 70%;
+  padding-left: 30px;
 }
 
 .eventsInfo h3 {
@@ -569,7 +572,7 @@ button:hover {
 
 .gallery {
   background: #220303;
-  padding: 50px;
+  padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +584,11 @@ button:hover {
 .galleryItem {
   position: relative;
   max-width: 100%;
-  margin: 20px;
+  margin: 0px;
+}
+
+.galleryItem img {
+  width: 90%;
 }
 
 .navLogo {
@@ -673,7 +680,7 @@ nav a {
   -webkit-box-shadow: -1em 1em #ff8327;
           box-shadow: -1em 1em #ff8327;
   position: relative;
-  top: -153px;
+  top: -145px;
   right: 10px;
 }
 
@@ -749,6 +756,72 @@ nav a {
   height: 150%;
 }
 
+.blogAsideImg {
+  width: 100%;
+}
+
+.blogAsideImg img {
+  width: 112%;
+  position: relative;
+  top: -30px;
+  left: -70px;
+}
+
+.blogAside {
+  width: calc(100% / 3);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mission h3 {
+  margin: 10px 0 20px;
+}
+
+.mission p {
+  margin: 0;
+}
+
+.asideContents {
+  background: #220303;
+  width: 80%;
+  margin-top: 100px;
+}
+
+.missionRecents {
+  padding-left: 30px;
+}
+
+.recents h3 {
+  margin: 50px 0 10px;
+}
+
+.more {
+  text-decoration: none;
+  color: #ff8327;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.more:hover {
+  color: #bf2603;
+}
+
+.recents ul {
+  color: #bf2603;
+  font-size: 1.8em;
+}
+
+.recents ul span {
+  color: #ffffff;
+  font-size: 2em;
+  margin-left: 5px;
+}
+
 .contactHeader img {
   height: 100%;
   width: 100%;
@@ -767,10 +840,6 @@ nav a {
 
 .inTouch h1 {
   margin: 0;
-}
-
-main {
-  height: 50%;
 }
 
 aside {
@@ -900,12 +969,13 @@ form {
 
 footer {
   background: #323030;
+  position: relative;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: -1;
+  bottom: 0;
 }
 
 footer p {

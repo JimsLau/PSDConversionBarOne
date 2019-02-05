@@ -32,7 +32,7 @@
     padding: 30px 50px 30px 100px;
     box-shadow: -1em 1em $secondaryColor;
     position: relative;
-    top: -153px;
+    top: -145px;
     right: 10px;
         h3 {
             margin-bottom: 0;
@@ -98,4 +98,65 @@
         border: 1px solid $secondaryColor;
         height: 150%;
     } 
+}
+
+.blogAsideImg {
+    width: 100%;
+    img {
+        width: 112%;
+        position: relative;
+        top: -30px;
+        left: -70px;
+    }
+
+}
+
+.blogAside {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mission {
+    h3 {
+        margin: 10px 0 20px;
+    }
+        p {
+            margin: 0;
+        }
+}
+
+.asideContents {
+    background: $secondaryBg;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.missionRecents {
+    padding-left: 30px;
+}
+
+.recents h3 {
+    margin: 50px 0 10px;
+}
+
+.more {
+    text-decoration: none;
+    color: $secondaryColor;
+    transition: ease-in-out 0.5s;
+}
+
+.more:hover {
+    color: $accent;
+}
+
+.recents ul {
+    color: $accent;
+    font-size: 1.8em;
+        span {
+            color: $primaryColor;
+            font-size: 2em;
+            margin-left: 5px;
+        }
 }

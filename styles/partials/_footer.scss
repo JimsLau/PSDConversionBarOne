@@ -1,8 +1,9 @@
 footer {
     background: $footerBg;
+    position: relative;
     display: grid;
     justify-content: center;
-    bottom: -1;
+    bottom: 0;
         p {
             margin: 0 auto;
         }

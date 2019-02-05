@@ -13,11 +13,13 @@ body {
     }
 }
 // Researched how to do css fade in, found out from stack overflow
-#home {
+html {
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
 }
 
-#mainLogo {
+#mainLogo,
+.blogHeadline,
+.inTouch {
     -webkit-animation: fadein 5s;
 }
 

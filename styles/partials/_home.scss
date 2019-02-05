@@ -39,10 +39,10 @@
 
 .headerBox Img {
     position: absolute;
-    top: 397px;
+    top: 300px;
     right: 0;
     width: 50%;
-    height: 650px;
+    height: 520px;
 }
 
 .bannerImg img {
@@ -163,7 +163,7 @@
 
 .hostParty {
     text-align: center;
-    margin: 6%;
+    margin: 12% auto;
 }
 
 .hostParty h3 {
@@ -181,7 +181,7 @@
 
 .events {
     display: flex;
-    padding: 100px 300px;
+    padding: 100px 100px;
 
 }
 
@@ -195,6 +195,7 @@
 
 .eventsInfo {
     width: 70%;
+    padding-left: 30px;
 }
 
 .eventsInfo h3 {
@@ -203,7 +204,7 @@
 
 .gallery {
     background: $secondaryBg;
-    padding: 50px;
+    padding: 100px;
     display: flex;
     justify-content: center;
 
@@ -212,7 +213,10 @@
 .galleryItem {
     position: relative;
     max-width: 100%;
-    margin: 20px;
+    margin: 0px;
+        img {
+            width: 90%;
+        }
 }
 
 

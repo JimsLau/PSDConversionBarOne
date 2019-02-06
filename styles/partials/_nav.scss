@@ -49,6 +49,8 @@ nav a:hover {
     color: $secondaryColor;
 }
 
+// Responsive styling
+
 @media screen and (max-width: 1200px) {
     .navLogo {
         display: none;

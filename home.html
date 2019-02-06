@@ -15,41 +15,41 @@
 </head>
 
 <body>
-    <header>
+    <header class="homeHeader">
         <a href="#main" class="skipLink">Skip to the main content</a>
-        <div class="homeHeader">
-            <img class="headerBg" src="../ProjectTwo/barFinalAssets/homeImage1.jpg" alt="background image of a bar">
-            <div class="centerLogo">
-                <h1 id="mainLogo">Bar-One</h1>
-                <h2 id="secondLogo">Place to be</h2>
-            </div>
-        </div>
-        <div class="navBar">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">home</a>
-                        <a href="#about">about</a>
-                        <a href="#" class="navLogo">Bar-One</a>
-                        <a href="blog.html">blog</a>
-                        <a href="contact.html">contact</a>
-                    </li>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <a href="home.html" class="navLogo">Bar-One</a>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+        <div class="centerLogo">
+            <h1>Bar-One</h1>
+            <h2>Place to be</h2>
         </div>
+
         <div class="headerBox">
-            <img src="../ProjectTwo/barFinalAssets/headerBox.jpg" alt="photo of winte glasses hung upside down">
+            <img src="../ProjectTwo/barFinalAssets/headerBox.jpg" alt="photo of wine glasses hung upside down">
         </div>
     </header>
-    <main>
+    <main id="main">
         <section>
-            <div class="section1">
+            <div class="section1" id="about">
                 <div class="spaceComm">
-                    <a href="#">
-                        <div class="icon">
+                    <div class="icon">
+                        <a href="#">
                             <i class="fas fa-home"></i>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="newSpace">
                         <h3>New space</h3>
                         <p>
@@ -57,11 +57,11 @@
                             inventore, obcaecati magni minus.
                         </p>
                     </div>
-                    <a href="#">
-                        <div class="icon">
+                    <div class="icon">
+                        <a href="#">
                             <i class="fas fa-users"></i>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="community">
                         <h3>Community</h3>
                         <p>
@@ -71,11 +71,11 @@
                     </div>
                 </div>
                 <div class="blogTouch">
-                    <a href="blog.html">
-                        <div class="icon">
+                    <div class="icon">
+                        <a href="blog.html">
                             <i class="fas fa-file"></i>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="blog">
                         <h3>Blog</h3>
                         <p>
@@ -83,11 +83,11 @@
                             inventore, obcaecati magni minus.
                         </p>
                     </div>
-                    <a href="contact.html">
-                        <div class="icon">
+                    <div class="icon">
+                        <a href="contact.html">
                             <i class="fas fa-phone"></i>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="getInTouch">
                         <h3>Get in Touch</h3>
                         <p>
@@ -111,7 +111,7 @@
                             adipisci eius, reprehenderit ullam labore sit voluptatum, dicta temporibus delectus commodi?
                         </p>
                         <div class="button">
-                            <a href="#" class="locButton">Read More</a>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             adipisci eius, reprehenderit ullam labore sit voluptatum, dicta temporibus delectus commodi?
                         </p>
                         <div class="button">
-                            <a href="#" class="planButton">Read More</a>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                     <div class="rightImg">
@@ -137,10 +137,11 @@
                 <div class="hostParty">
                     <h3>Want to host a party?</h3>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam atque sint delectus provident libero cumque doloremque, aspernatur asperiores molestias at dolore. Perspiciatis quidem quis vel praesentium quas quae at?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam atque sint delectus provident libero cumque doloremque,
+                        aspernatur asperiores molestias at dolore. Perspiciatis quidem quis vel praesentium quas quae at?
                     </p>
                     <div class="button">
-                        <a href="#" class="hostButton">Find Out More</a>
+                        <a href="#">Find Out More</a>
                     </div>
                 </div>
                 <div class="bannerImg">
@@ -159,7 +160,7 @@
                             est vitae, numquam accusantium odio eaque nemo blanditiis.
                         </p>
                         <div class="button">
-                            <a href="#" class="eventsButton">Find Out More</a>
+                            <a href="#">Find Out More</a>
                         </div>
                     </div>
                 </div>

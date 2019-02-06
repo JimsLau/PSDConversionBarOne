@@ -15,28 +15,62 @@
 </head>
 
 <body>
-    <header>
+    <header class="blogHeader">
         <div class="navBar">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="home.html">home</a>
-                        <a href="#about">about</a>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="home.html#about">about</a></li>
                         <a href="home.html" class="navLogo">Bar-One</a>
-                        <a href="#">blog</a>
-                        <a href="contact.html">contact</a>
-                    </li>
-                </ul>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
-        <div class="blogHeadline">
+        <div class="headline">
             <h1>Blog</h1>
         </div>
-        <div class="blogHeader">
-            <img src="../ProjectTwo/barFinalAssets/blogHeader1.jpg" alt="background image of spirits on bar">
-        </div>
     </header>
-    <main>
+    <main class="container">
+        <aside class="blogAside">
+            <div class="asideContents">
+                <div class="blogAsideImg">
+                    <img src="../ProjectTwo/barFinalAssets/sidebarImage.jpg" alt="image of glass being filled with beer from tap">
+                </div>
+                <div class="missionRecents">
+                    <div class="mission">
+                        <h3>Our mission</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, autem perspiciatis consequuntur possimus fugit ducimus.
+                            <p><a href="#home" class="more">Find out more.</a></p>
+                        </p>
+                    </div>
+                    <div class="recents">
+                        <h3>Recent Posts</h3>
+                        <ul>
+                            <li>
+                                <span>This is the first post.</span>
+                            </li>
+                            <li>
+                                <span>This is the second post.</span>
+                            </li>
+                            <li>
+                                <span>This is the third post.</span>
+                            </li>
+                            <li>
+                                <span>Wow, this list is so creative.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
         <div class="blogNews">
             <div class="blogImg">
                 <img src="../ProjectTwo/barFinalAssets/postImage.jpg" alt="photo of salad">
@@ -71,7 +105,7 @@
                     <div class="commentImg1">
                         <img src="../ProjectTwo/barFinalAssets/commentImage1.jpg" alt="profile photo of comment person with ear rings">
                     </div>
-                    <div class="comment1">
+                    <div class="comment">
                         <h4>Tuesday October 9th, 2019 by Sulaire</h4>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam illum beatae nemo quis. Non, quaerat culpa hic ea nulla molestias
@@ -83,7 +117,7 @@
                     <div class="commentImg2">
                         <img src="../ProjectTwo/barFinalAssets/commentImage2.jpg" alt="profile photo of comment person with beard">
                     </div>
-                    <div class="comment2">
+                    <div class="comment">
                         <h4>Wednesday October 10th, 2019 by Renzo</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia suscipit voluptates aliquam explicabo dignissimos
@@ -114,39 +148,6 @@
                 </div>
             </div>
         </div>
-        <aside class="blogAside">
-            <div class="asideContents">
-                <div class="blogAsideImg">
-                    <img src="../ProjectTwo/barFinalAssets/sidebarImage.jpg" alt="image of glass being filled with beer from tap">
-                </div>
-                <div class="missionRecents">
-                    <div class="mission">
-                        <h3>Our mission</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, autem perspiciatis consequuntur possimus fugit ducimus.
-                            <p><a href="#home" class="more">Find out more.</a></p>
-                        </p>
-                    </div>
-                    <div class="recents">
-                        <h3>Recent Posts</h3>
-                        <ul>
-                            <li>
-                                <span>This is the first post.</span>
-                            </li>
-                            <li>
-                                <span>This is the second post.</span>
-                            </li>
-                            <li>
-                                <span>This is the third post.</span>
-                            </li>
-                            <li>
-                                <span>Wow, this list is so creative.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </aside>
     </main>
     <footer>
         <div class="copyright">

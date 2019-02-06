@@ -16,46 +16,28 @@
 
 <body>
     <header class="contactHeader" id=#contact>
-        <img src="../ProjectTwo/barFinalAssets/contactHeader1.jpg" alt="background picture of bokeh lights">
         <div class="navBar">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="home.html">home</a>
-                        <a href="#about">about</a>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="home.html#about">about</a></li>
                         <a href="home.html" class="navLogo">Bar-One</a>
-                        <a href="blog.html">blog</a>
-                        <a href="#">contact</a>
-                    </li>
-                </ul>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
-        <div class="inTouch">
+        <div class="headline">
             <h1>Get in <span>touch</span></h1>
         </div>
     </header>
-    <main>
-        <div class="contactForm">
-            <form>
-                <div class="nameEmail">
-                    <div class="nameInput">
-                        <label for="name" class="visuallyHidden">name</label>
-                        <input type="text" id="name" placeholder="Name">
-                    </div>
-                    <div class="emailInput">
-                        <label for="email" class="visuallyHidden">email address</label>
-                        <input type="email" id="email" name="email" placeholder="Email address">
-                    </div>
-                </div>
-                <div class="messageInput">
-                    <label for="message" class="visuallyHidden">message</label>
-                    <textarea type="text" id="message" name="text" placeholder="Message"></textarea>
-                </div>
-                <div class="submitButton">
-                    <button type="submit" name="submit">Submit</button>
-                </div>
-            </form>
-        </div>
+    <main class="container">
         <aside>
             <div class="contactInfo">
                 <div class="mediaInfo">
@@ -78,6 +60,27 @@
                 </div>
             </div>
         </aside>
+        <div class="contactForm">
+            <form>
+                <div class="nameEmail">
+                    <div class="nameInput">
+                        <label for="name" class="visuallyHidden">name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="emailInput">
+                        <label for="email" class="visuallyHidden">email address</label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                    </div>
+                </div>
+                <div class="messageInput">
+                    <label for="message" class="visuallyHidden">message</label>
+                    <textarea type="text" id="message" name="text" placeholder="Message"></textarea>
+                </div>
+                <div class="submitButton">
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Copyright &copy; 2019 HackerYou</p>

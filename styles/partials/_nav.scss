@@ -1,3 +1,17 @@
+nav input[type="checkbox"] {
+    display: none;
+}
+
+#menuToggle {
+    width: 40%;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .navLogo {
     font-family: $secondary;
     font-size: 6em;
@@ -6,7 +20,6 @@
 }
 
 nav {
-    position: absolute;
     width: 100%;
     top: 4%;
     text-align: center;
@@ -27,12 +40,119 @@ nav {
     }
 }
 
-.navBar ul {
-    width: calc(100% / 2);
-    margin: 0 auto;
+nav ul {
+    margin: 40px auto;
     padding: 0;
 }
 
-.navBar a:hover {
+nav a:hover {
     color: $secondaryColor;
+}
+
+@media screen and (max-width: 1200px) {
+    .navLogo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navLogo {
+        display: none;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    // Hamburger menu toggle, inspired from stack overflow, codepen, and notes. Followed codepen codes by Erik Terwan (https://codepen.io/erikterwan/pen/EVzeRP
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 20px;
+        left: -90px;
+        z-index: 1;
+        user-select: none;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        
+        -webkit-touch-callout: none;
+    }
+
+    // Style spans into hamburger
+    #menuToggle span {
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        background: $primaryColor;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bevier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    // Transform hamburger into cross
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-1px, 1px);
+        background: $primaryBg;
+    }
+
+    // Hide middle slice
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2,0.2);
+    }
+
+    // Last slice should go opposite direction
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    // Slide out menu styling
+    #menu {
+        position: absolute;
+        width: 480px;
+        margin: -100px 0 0 -150px;
+        padding: 50px 0 0 200px;
+        padding-top: 100px;
+        background: $accent;
+        list-style-type: none;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        display: block;
+    }
+
+    #menu li {
+        padding: 10px;
+        font-size: 2.2em;
+    }
+
+    // Show menu
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
 }

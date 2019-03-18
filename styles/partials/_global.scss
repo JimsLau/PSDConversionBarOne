@@ -1,4 +1,8 @@
 
+html {
+    max-width: 1600px;
+}
+
 body {
     font-size: 62.5%;
     height: 100vh;
@@ -9,7 +13,6 @@ body {
     line-height: 2.5em;
     font-weight: 100;
     min-width: 320px;
-    max-width: 1680px;
     p {
         font-size: 3.9em;
     }

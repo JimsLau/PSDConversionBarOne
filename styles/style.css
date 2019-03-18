@@ -190,6 +190,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: 0;
 }
 
+html {
+  max-width: 1600px;
+}
+
 body {
   font-size: 62.5%;
   height: 100vh;
@@ -200,7 +204,6 @@ body {
   line-height: 2.5em;
   font-weight: 100;
   min-width: 320px;
-  max-width: 1680px;
 }
 
 body p {
@@ -435,8 +438,8 @@ button[type="submit"]:hover {
   position: relative;
   bottom: 120px;
   right: -720px;
-  width: 50%;
-  height: 500px;
+  width: 43.7%;
+  height: 478px;
 }
 
 .section1 {
@@ -1224,8 +1227,8 @@ nav a:hover {
 
 .contactForm {
   position: relative;
-  width: 56%;
-  height: 600px;
+  width: 51%;
+  height: 560px;
   top: -195px;
   right: 97px;
   padding: 30px;
@@ -1283,7 +1286,7 @@ nav a:hover {
   padding: 0;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1225px) {
   .contactForm {
     width: 100%;
     top: 0;

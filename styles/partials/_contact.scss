@@ -37,8 +37,8 @@
 
 .contactForm {
     position: relative;
-    width: 56%;
-    height: 600px;
+    width: 51%;
+    height: 560px;
     top: -195px;
     right: 97px;
     padding: 30px;
@@ -89,7 +89,7 @@
 
 // Responsive styling
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1225px) {
     .contactForm {
         width: 100%;
         top: 0;
